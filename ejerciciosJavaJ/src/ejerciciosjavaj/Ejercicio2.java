@@ -1,26 +1,32 @@
 package ejerciciosjavaj;
-
 import java.util.Scanner;
 
 public class Ejercicio2 {
+    public static void Ascensor() {
+        Scanner dato = new Scanner(System.in);
+        System.out.print("Ingrese pa donde quiere ir");
+        int opcion = dato.nextInt();
+        ProcesoAsc.procesarInfo(opcion);
+    }
+}
 
-    public static void ejecutar() { // Asegúrate de que sea 'ejecutar', no 'Ascensor'
-        // Definir el rango de pisos disponibles (por ejemplo, pisos del 1 al 10)
-        int pisoMinimo = 1;
-        int pisoMaximo = 10;
-
-        // Crear un objeto Scanner para leer la entrada del usuario
-        Scanner scanner = new Scanner(System.in);
-
-        // Solicitar al usuario que ingrese el piso al que desea ir
-        System.out.print("Ingrese el piso al que desea ir (entre " + pisoMinimo + " y " + pisoMaximo + "): ");
-        int pisoDeseado = scanner.nextInt();
-
-        // Validar si el piso deseado está dentro del rango permitido
-        if (pisoDeseado >= pisoMinimo && pisoDeseado <= pisoMaximo) {
-            System.out.println("El ascensor se está moviendo al piso " + pisoDeseado);
+class ProcesoAsc {
+    public static void procesarInfo(int opcion) {
+        System.out.println("Opción ingresada: " + opcion);
+        if (opcion <= 10 && opcion >= 0) {
+            Mostrar2.mostrarInfo(true,opcion);
         } else {
-            System.out.println("Error: El piso ingresado no es válido. Debe estar entre " + pisoMinimo + " y " + pisoMaximo + ".");
+            Mostrar2.mostrarInfo(false,opcion);
+        }
+    }
+}
+
+class Mostrar2 {
+    public static void mostrarInfo(boolean estado,int opcion) {
+        if (estado) {
+            System.out.println("moviendose al piso" + opcion);
+        } else {
+            System.out.println("no existe el piso "+ opcion);
         }
     }
 }

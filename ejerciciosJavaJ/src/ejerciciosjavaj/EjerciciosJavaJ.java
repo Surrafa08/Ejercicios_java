@@ -1,4 +1,5 @@
 package ejerciciosjavaj;
+
 import java.util.Scanner;
 
 public class EjerciciosJavaJ {
@@ -16,14 +17,18 @@ public class EjerciciosJavaJ {
                         Ejercicio1 obj1 = new Ejercicio1();
                         obj1.ejecutar();
                         break;
-                    
+                        
+                    case 2:
+                        Ejercicio2 obj2 = new Ejercicio2();
+                        obj2.Ascensor();
+                        break;
                 }
             } else if (opcion != 0) {
                 System.out.println("El numero ingresado está fuera del rango (1-29), hágalo de nuevo :v");
             }
         } while (opcion != 0);
         
-        System.out.println("Te salistes");
+        System.out.println("Te saliste");
         tomaDato.close();
     }
 }
