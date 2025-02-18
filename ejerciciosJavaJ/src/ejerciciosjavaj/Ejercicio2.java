@@ -12,7 +12,7 @@ public class Ejercicio2 {
 
 class ProcesoAsc {
     public static void procesarInfo(int opcion) {
-        System.out.println("Opción ingresada: " + opcion);
+        System.out.println("Opcion ingresada: " + opcion);
         if (opcion <= 10 && opcion >= 0) {
             Mostrar2.mostrarInfo(true,opcion);
         } else {

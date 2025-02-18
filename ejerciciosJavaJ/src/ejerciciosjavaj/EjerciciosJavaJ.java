@@ -25,11 +25,16 @@ public class EjerciciosJavaJ {
                         
                     case 3:
                         Ejercicio3 obj3 = new Ejercicio3();
-                        obj3.PesoAscensor();  // CORREGIDO: Usar obj3 para llamar al método de Ejercicio3
+                        obj3.PesoAscensor();
+                        break;
+                        
+                    case 4:
+                        Ejercicio4 obj4 = new Ejercicio4();
+                        obj4.TemperaturaAmbiente();
                         break;
                 }
             } else if (opcion != 0) {
-                System.out.println("El numero ingresado está fuera del rango (1-29), hagalo de nuevo :v");
+                System.out.println("El numero ingresado esta fuera del rango (1-29), hagalo de nuevo xd|");
             }
         } while (opcion != 0);
         
