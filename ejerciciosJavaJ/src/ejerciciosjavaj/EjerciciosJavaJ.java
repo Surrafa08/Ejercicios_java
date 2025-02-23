@@ -32,7 +32,13 @@ public class EjerciciosJavaJ {
                         Ejercicio4 obj4 = new Ejercicio4();
                         obj4.TemperaturaAmbiente();
                         break;
+                        
+                    case 5:
+                        Ejercicio5 obj5 = new Ejercicio5();
+                        obj5.TemperaturaAmbiente2();
+                        break;
                 }
+                
             } else if (opcion != 0) {
                 System.out.println("El numero ingresado esta fuera del rango (1-29), hagalo de nuevo xd|");
             }
