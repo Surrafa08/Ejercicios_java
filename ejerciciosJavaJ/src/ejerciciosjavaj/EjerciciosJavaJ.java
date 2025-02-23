@@ -37,6 +37,11 @@ public class EjerciciosJavaJ {
                         Ejercicio5 obj5 = new Ejercicio5();
                         obj5.TemperaturaAmbiente2();
                         break;
+                        
+                    case 6:
+                        Ejercicio6 obj6 = new Ejercicio6();
+                        obj6.SimulacionAscensor();
+                        break;
                 }
                 
             } else if (opcion != 0) {
