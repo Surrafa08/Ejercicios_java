@@ -42,6 +42,26 @@ public class EjerciciosJavaJ {
                         Ejercicio6 obj6 = new Ejercicio6();
                         obj6.SimulacionAscensor();
                         break;
+                        
+                    case 7:
+                        Ejercicio7 obj7 = new Ejercicio7();
+                        obj7.calcularCompra();
+                        break;
+                        
+                    case 8:
+                        Ejercicio8 obj8 = new Ejercicio8();
+                        obj8.calcularIMC();
+                        break;
+                        
+                    case 9:
+                        Ejercicio9 obj9 = new Ejercicio9();
+                        obj9.recomendarPelicula();
+                        break;
+                        
+                    case 10:
+                        Ejercicio10 obj10 = new Ejercicio10();
+                        obj10.clasificacionCampeonato();
+                        break;
                 }
                 
             } else if (opcion != 0) {
