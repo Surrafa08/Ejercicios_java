@@ -62,6 +62,56 @@ public class EjerciciosJavaJ {
                         Ejercicio10 obj10 = new Ejercicio10();
                         obj10.clasificacionCampeonato();
                         break;
+                        
+                    case 11:
+                        Ejercicio11 obj11 = new Ejercicio11();
+                        obj11.menuRestaurante();
+                        break;
+                        
+                    case 12:
+                        Ejercicio12 obj12 = new Ejercicio12();
+                        obj12.cajeroAutomatico();
+                        break;
+                        
+                    case 13:
+                        Ejercicio13 obj13 = new Ejercicio13();
+                        obj13.compraTiendaOnline();
+                        break;
+                        
+                    case 14:
+                        Ejercicio14 obj14 = new Ejercicio14();
+                        obj14.impresora();
+                        break;
+                        
+                    case 15:
+                        Ejercicio15 obj15 = new Ejercicio15();
+                        obj15.viajeEnCoche();
+                        break;
+                        
+                    case 16:
+                        Ejercicio16 obj16 = new Ejercicio16();
+                        obj16.cuentaRegresiva();
+                        break;
+                        
+                    case 17:
+                        Ejercicio17 obj17 = new Ejercicio17();
+                        obj17.juegoAdivinanza();
+                        break;
+                        
+                    case 18:
+                        Ejercicio18 obj18 = new Ejercicio18();
+                        obj18.registroBiblioteca();
+                        break;
+                        
+                    case 19:
+                        Ejercicio19 obj19 = new Ejercicio19();
+                        obj19.menuComidasRapidas();
+                        break;
+                        
+                    case 20:
+                        Ejercicio20 obj20 = new Ejercicio20();
+                        obj20.sensorTemperatura();
+                        break;
                 }
                 
             } else if (opcion != 0) {
