@@ -11,7 +11,7 @@ public class EjerciciosJavaJ {
             System.out.println("Ingrese el numero del ejercicio que desea ver (1-29) o 0 para salir:");
             opcion = tomaDato.nextInt();
             
-            if (opcion >= 1 && opcion <= 29) {
+            if (opcion >= 1 && opcion <= 28) {
                 switch (opcion) {
                     case 1:
                         Ejercicio1 obj1 = new Ejercicio1();
@@ -112,10 +112,51 @@ public class EjerciciosJavaJ {
                         Ejercicio20 obj20 = new Ejercicio20();
                         obj20.sensorTemperatura();
                         break;
+                        
+                    case 21:
+                        Ejercicio21 obj21 = new Ejercicio21();
+                        obj21.ingresarResultados();
+                        break;
+                        
+                    case 22:
+                        Ejercicio22 obj22 = new Ejercicio22();
+                        obj22.gestionTareas();
+                        break;
+                    
+                    case 23:
+                        Ejercicio23 obj23 = new Ejercicio23();
+                        obj23.registroVentas();
+                        break;
+                        
+                    case 24:
+                        Ejercicio24 obj24 = new Ejercicio24();
+                        obj24.registroVehiculos();
+                        break;
+                        
+                    case 25:
+                        Ejercicio25 obj25 = new Ejercicio25();
+                        obj25.carritoCompras();
+                        break;
+                        
+                    case 26:
+                        Ejercicio26 obj26 = new Ejercicio26();
+                        obj26.agendaContactos();
+                        break;
+                        
+                    case 27:
+                        Ejercicio27 obj27 = new Ejercicio27();
+                        obj27.sumarNumeros();
+                        break;
+                        
+                    case 28:
+                        Ejercicio28 obj28 = new Ejercicio28();
+                        obj28.procesoVentas();
+                        break;
+                
                 }
                 
             } else if (opcion != 0) {
-                System.out.println("El numero ingresado esta fuera del rango (1-29), hagalo de nuevo xd|");
+                System.out.println("El numero ingresado esta fuera del rango (1-28), hagalo de nuevo xd|");
             }
         } while (opcion != 0);
         
@@ -123,3 +164,5 @@ public class EjerciciosJavaJ {
         tomaDato.close();
     }
 }
+
+//esto es un controlador de ejecucion para llamar el ejercicio que elijamos y lo ejecuta <3
